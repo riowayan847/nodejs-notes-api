@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Notes</title>
+</head>
+<body>
+
+<h2>Notes</h2>
+<ul id="notesList"></ul>
+
+<a href="/">Add Note</a>
+
+<script>
+async function loadNotes() {
+    const res = await fetch('/notes');
+    const result = await res.json();
+
+    const list = document.getElementById('notesList');
+    list.innerHTML = '';
+
+    result.data.forEach(note => {
+        const li = document.createElement('li');
+        li.textContent = note.text;
+        list.appendChild(li);
+    });
+}
+
+loadNotes();
+</script>
+
+</body>
+</html>

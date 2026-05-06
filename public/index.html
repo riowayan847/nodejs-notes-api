@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Note</title>
+</head>
+<body>
+
+<h2>Add Note</h2>
+<input id="noteInput" placeholder="Enter note">
+<button onclick="addNote()">Add</button>
+
+<br><br>
+<a href="/notes.html">View Notes</a>
+
+<script>
+async function addNote() {
+    const text = document.getElementById('noteInput').value;
+
+    await fetch('/notes', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ text })
+    });
+
+    alert("Note added");
+}
+</script>
+
+</body>
+</html>
