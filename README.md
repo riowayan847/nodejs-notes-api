@@ -3,13 +3,6 @@
 A simple Notes API built using Node.js and Express with a basic frontend served using static HTML files.  
 It demonstrates CRUD-style communication between frontend and backend using REST APIs.
 
-## Project Structure
-
-project/
-|
-├── app.js
-
-
 ## Features
 
 - Add new notes from UI
