@@ -70,7 +70,3 @@ http://localhost:3000
 - Add timestamps
 - Improve UI design
 - Add input validation
-
-## License
-
-For learning purposes only.
