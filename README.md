@@ -6,11 +6,9 @@ It demonstrates CRUD-style communication between frontend and backend using REST
 ## Project Structure
 
 project/
-│
+|
 ├── app.js
-└── public/
-    ├── index.html
-    └── notes.html
+
 
 ## Features
 
